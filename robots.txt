@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nkohdatas.github.io/m-cn-aiyouxi-com-cn/sitemap.xml
