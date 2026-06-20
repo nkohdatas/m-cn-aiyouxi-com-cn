@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>澳门威尼斯人 · 产品说明与对照手册</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #faf9f6;
+            font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Georgia', 'Times New Roman', serif;
+            color: #2e2b28;
+            line-height: 1.75;
+            padding: 2rem 1rem;
+        }
+
+        .page {
+            max-width: 860px;
+            margin: 0 auto;
+            background: #fffcf8;
+            padding: 2.5rem 2.2rem;
+            border-radius: 24px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04), 0 8px 30px rgba(0, 0, 0, 0.02);
+        }
+
+        /* 首字下沉，强化文章感 */
+        .hero p:first-of-type::first-letter {
+            font-size: 3.2rem;
+            float: left;
+            line-height: 1;
+            margin-right: 0.5rem;
+            margin-top: 0.15rem;
+            color: #7b5e4b;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            border-left: 6px solid #b4947a;
+            padding-left: 1rem;
+            margin-bottom: 1.8rem;
+            color: #3c2f28;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-top: 2.8rem;
+            margin-bottom: 0.8rem;
+            color: #4d3e33;
+            border-bottom: 1px solid #e6d9cf;
+            padding-bottom: 0.3rem;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-top: 1.6rem;
+            margin-bottom: 0.5rem;
+            color: #5e4d3f;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .highlight-box {
+            background: #f3ede7;
+            border-left: 5px solid #b4947a;
+            padding: 1.2rem 1.6rem;
+            margin: 1.8rem 0;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .highlight-box strong {
+            color: #4f3b2e;
+        }
+
+        .insight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.2rem;
+            margin: 1.6rem 0;
+        }
+
+        .insight-card {
+            background: #f6f1ec;
+            padding: 1.2rem 1rem;
+            border-radius: 12px;
+            border: 1px solid #e2d4c9;
+            transition: box-shadow 0.2s;
+        }
+
+        .insight-card:hover {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .insight-card h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #3f322a;
+            margin-bottom: 0.4rem;
+            letter-spacing: 0.01em;
+        }
+
+        .insight-card p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            color: #4d4139;
+        }
+
+        .tip-box {
+            background: #e9e1d9;
+            padding: 1rem 1.4rem;
+            border-radius: 12px;
+            margin: 1.6rem 0;
+            font-size: 0.95rem;
+            display: flex;
+            gap: 0.6rem;
+            align-items: flex-start;
+        }
+
+        .tip-box::before {
+            content: "📌";
+            font-size: 1.2rem;
+            line-height: 1.4;
+            flex-shrink: 0;
+        }
+
+        .faq-mini {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 2px dashed #d6c8bc;
+        }
+
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .faq-item strong {
+            display: block;
+            font-weight: 600;
+            color: #3f322a;
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-item p {
+            margin-bottom: 0.4rem;
+            font-size: 0.95rem;
+        }
+
+        a {
+            color: #7d604c;
+            text-decoration: none;
+            border-bottom: 1px solid #cbb6a5;
+            transition: color 0.15s, border-color 0.15s;
+        }
+
+        a:hover {
+            color: #4f3b2e;
+            border-bottom-color: #7d604c;
+        }
+
+        .footnote {
+            margin-top: 2.5rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #e0d3c8;
+            font-size: 0.85rem;
+            color: #6b5e54;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 0.6rem;
+        }
+
+        @media (max-width: 540px) {
+            body {
+                padding: 1rem 0.6rem;
+            }
+            .page {
+                padding: 1.5rem 1.2rem;
+            }
+            h1 {
+                font-size: 1.7rem;
+                padding-left: 0.8rem;
+            }
+            .hero p:first-of-type::first-letter {
+                font-size: 2.4rem;
+            }
+            .insight-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="hero">
+        <h1>澳门威尼斯人 · 产品说明册</h1>
+        <p>综合度假村概念在亚洲的实践，常以「水城」为空间线索。<a href="https://official-venetian.com">澳门威尼斯人</a>是其中体量较大、运营时间较长的一处设施，集住宿、展演、购物、餐饮于一体。对于计划前往或希望了解其功能配置的使用者，本文从日常查询、对照和延伸阅读的角度，整理了一份相对完整的参考说明。</p>
+    </div>
+
+    <h2>功能摘要</h2>
+    <p>项目主体包含约 3,000 间套房、大型会展空间、大运河购物中心、多个剧场及娱乐场（依当地法规运营）。建筑内部复刻了威尼斯地标元素——圣马可广场、里亚托桥及运河河道，贡多拉游船为公共区域提供体验动线。商业部分覆盖中高端零售与连锁餐饮，另设专属贵宾区域及水疗中心。</p>
+
+    <div class="highlight-box">
+        <strong>对照说明：</strong> 以下信息基于公开资料与实地走访整理，具体运营安排、设施开放情况或价格变动，请以现场或官方渠道最新公告为准。
+    </div>
+
+    <h2>亮点分类</h2>
+    <div class="insight-grid">
+        <div class="insight-card">
+            <h4>室内运河与穹顶</h4>
+            <p>购物中心顶部覆盖手绘天幕，配合运河与⼩桥，弱化室内外边界，形成连续漫游场景。</p>
+        </div>
+        <div class="insight-card">
+            <h4>套房尺度</h4>
+            <p>基础套房面积约 70 平方米起，起居区与睡眠区分离，适合停留多日的访客。</p>
+        </div>
+        <div class="insight-card">
+            <h4>会展与演出</h4>
+            <p>拥有超 10 万平方米的会议空间及若干剧场，常年举办行业展会与驻场表演。</p>
+        </div>
+        <div class="insight-card">
+            <h4>交通接驳</h4>
+            <p>提供免费穿梭巴士往返港澳码头、关闸、机场及北安码头，班次约 15-30 分钟一班。</p>
+        </div>
+    </div>
+
+    <h2>使用场景建议</h2>
+    <p><strong>短期休闲：</strong> 推荐半天至一天用于运河购物中心及公共区域漫步，可体验贡多拉游船（约 15 分钟），留意非高峰时段排队较短。<br>
+    <strong>商务与团体：</strong> 大型会议可提前预约连通套房或专属楼层，会展中心配有独立入口及物流通道。<br>
+    <strong>家庭出行：</strong> 酒店提供连通房与儿童托管服务，但部分区域（娱乐场）须年满 21 岁方可进入，同行家庭需提前留意动线规划。</p>
+
+    <div class="tip-box">
+        <span>实地对照时，建议先取阅大堂处的导览图，或向礼宾部索取当天表演与商铺营业时间表。<a href="https://official-venetian.com">澳门威尼斯人</a>内部通道较复杂，初次到访可预留 20 分钟用于定位方向。</span>
+    </div>
+
+    <h2>常见对照查询 (FAQ 摘要)</h2>
+    <div class="faq-mini">
+        <div class="faq-item">
+            <strong>Q：适合非酒店住客进入吗？</strong>
+            <p>A：公共区域（购物中心、运河、部分餐饮）对所有人开放。剧场演出及部分贵宾区域需凭票或预约。</p>
+        </div>
+        <div class="faq-item">
+            <strong>Q：是否有免费 Wi‑Fi？</strong>
+            <p>A：酒店住客可连接客房网络；购物中心内部分咖啡店及公共休息区提供免费 Wi‑Fi，速度一般。</p>
+        </div>
+        <div class="faq-item">
+            <strong>Q：贡多拉游船需要预约吗？</strong>
+            <p>A：可现场购票，周末及节假日建议上午优先搭乘。部分旅行平台提供电子券，需确认是否与现场售票窗口兑换。</p>
+        </div>
+        <div class="faq-item">
+            <strong>Q：周边是否有其他步行可达的景点？</strong>
+            <p>A：路氹连贯公路一带集中了多家度假酒店，步行约 5-15 分钟可到相邻项目（如四季名店、伦敦人），适合一次性串联参观。</p>
+        </div>
+    </div>
+
+    <h2>延伸阅读提示</h2>
+    <p>若需更系统的背景了解，可参考澳门特别行政区政府旅游局官网关于路氹城度假村的介绍，或翻阅建筑与室内设计类期刊中关于“主题化商业空间”的案例分析。对于运营数据及财务指标，可查阅相关上市公司的年度报告（如金沙中国有限公司年报）。</p>
+
+    <div class="footnote">
+        <span>本文档仅作信息整合与对照参考</span>
+        <span>更新日期：2025.04</span>
+    </div>
+</div>
+</body>
+</html>
